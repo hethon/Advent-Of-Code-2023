@@ -1,4 +1,3 @@
-
 with open("./input.txt", "r") as f:
 	lines = f.readlines()
 	total_calibration_value = 0

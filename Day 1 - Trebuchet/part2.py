@@ -9,6 +9,7 @@ with open("./input.txt", "r") as f:
 	total_calibration_value = 0
 	for line in lines:
 		calibration_value = ""
+
 		for i in range(len(line)):
 			if line[i].isdigit():
 				right_calibration_value = line[i]
@@ -22,7 +23,6 @@ with open("./input.txt", "r") as f:
 				calibration_value += right_calibration_value
 				break
 			
-
 		for i in range(len(line), -1, -1):
 			if line[i-1].isdigit():
 				left_calibration_value = line[i-1]
